@@ -44,7 +44,9 @@ function App() {
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
-                  href="tel:+38765860452"
+                  href="https://wa.me/387658604521"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Phone className="w-5 h-5" />
@@ -106,7 +108,9 @@ function App() {
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
-                  href="tel:+38765860452"
+                  href="https://wa.me/387658604521"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Phone className="w-5 h-5" />
