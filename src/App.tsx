@@ -4,13 +4,13 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       <div className="relative">
-        <div className="absolute top-6 left-6 z-20">
+        {/* <div className="absolute top-6 left-6 z-20">
           <img
             src="/Simbol -Crvena.png"
             alt="Logo"
             className="w-14 h-14 object-contain"
           />
-        </div>
+        </div> */}
 
         <div className="relative h-screen w-full overflow-hidden">
           <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center relative">
@@ -18,7 +18,7 @@ function App() {
             <img 
               src="/Landscape_artwork.png"
               alt="Hero"
-              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain z-0 w-4/5"
+              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain z-0 w-[85%]"
             />
             {/* Mobile - Portrait */}
             <img 
@@ -34,15 +34,15 @@ function App() {
           {/* Desktop - Logo and content at bottom */}
           <div className="hidden md:block absolute bottom-0 left-0 right-0 z-20 pb-16 px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="flex justify-center mb-8">
-                <img
-                  src="/Temperament Osnovna - Dvobojno.png"
-                  alt="Bend Logo"
-                  className="w-48 h-48 object-contain"
-                />
-              </div>
+              <div className="flex flex-wrap justify-center gap-4 mb-8 items-center">
+                <div className="flex justify-center">
+                  <img
+                    src="/Temperament Osnovna - Dvobojno.png"
+                    alt="Bend Logo"
+                    className="w-48 h-48 object-contain"
+                  />
+                </div>
 
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
                   href="tel:+38765 860452"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
@@ -94,17 +94,17 @@ function App() {
           </div>
 
           {/* Mobile - Logo and content centered */}
-          <div className="md:hidden absolute inset-0 z-20 flex flex-col items-center justify-between pt-12 pb-8 px-6">
-            <div className="flex justify-center">
-              <img
-                src="/Temperament Osnovna - Dvobojno.png"
-                alt="Bend Logo"
-                className="w-32 h-32 object-contain"
-              />
-            </div>
-
+          <div className="md:hidden absolute inset-0 z-20 flex flex-col items-center justify-center pb-8 px-6">
             <div className="flex flex-col items-center gap-6 mb-8">
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-4 items-center">
+                <div className="flex justify-center">
+                  <img
+                    src="/Temperament Osnovna - Dvobojno.png"
+                    alt="Bend Logo"
+                    className="w-32 h-32 object-contain"
+                  />
+                </div>
+
                 <a
                   href="tel:+381123456789"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
