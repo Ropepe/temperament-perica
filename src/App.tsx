@@ -94,17 +94,17 @@ function App() {
           </div>
 
           {/* Mobile - Logo and content centered */}
-          <div className="md:hidden absolute inset-0 z-20 flex flex-col items-center justify-between pt-12 pb-8 px-6">
-            <div className="flex justify-center mb-2">
-              <img
-                src="/Temperament Osnovna - Dvobojno.png"
-                alt="Bend Logo"
-                className="w-32 h-32 object-contain"
-              />
-            </div>
+          <div className="md:hidden absolute bottom-0 left-0 right-0 z-20 pb-8 px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="flex justify-center mb-2">
+                <img
+                  src="/Temperament Osnovna - Dvobojno.png"
+                  alt="Bend Logo"
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
 
-            <div className="flex flex-col items-center gap-6 mb-8">
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
                   href="tel:+381123456789"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
