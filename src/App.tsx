@@ -13,17 +13,18 @@ function App() {
         </div>
 
         <div className="relative h-screen w-full overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10"></div>
-
-          <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center">
-            {/* <div className="text-center text-gray-600">
-              <div className="text-sm mb-2">Hero Image</div>
-              <div className="text-xs">1920x1080px (Desktop)</div>
-              <div className="text-xs">1080x1920px (Mobile)</div>
-            </div> */}
-           
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10">
+          
           </div>
- <img src="/Portrait_artwork.png"/>
+
+          <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center relative">
+            <img 
+              src="/Portrait_artwork.png"
+              alt="Hero"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+ 
           <div className="absolute bottom-0 left-0 right-0 z-20 pb-16 px-6">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center mb-8">
