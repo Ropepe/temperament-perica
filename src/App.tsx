@@ -21,9 +21,9 @@ function App() {
               <div className="text-xs">1920x1080px (Desktop)</div>
               <div className="text-xs">1080x1920px (Mobile)</div>
             </div> */}
-            <img src="/Portrait_artwork.png"/>
+           
           </div>
-
+ <img src="/Portrait_artwork.png"/>
           <div className="absolute bottom-0 left-0 right-0 z-20 pb-16 px-6">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center mb-8">
