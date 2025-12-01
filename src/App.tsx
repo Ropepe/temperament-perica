@@ -13,23 +13,22 @@ function App() {
         </div>
 
         <div className="relative h-screen w-full overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10">
-          
-          </div>
-
           <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center relative">
             {/* Desktop - Landscape */}
             <img 
-              src="/landscape_artwork.png"
+              src="/Landscape_artwork.png"
               alt="Hero"
-              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain"
+              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain z-0"
             />
             {/* Mobile - Portrait */}
             <img 
-              src="/portrait_artwork.png"
+              src="/Portrait_artwork.png"
               alt="Hero"
-              className="md:hidden absolute inset-0 w-full h-full object-cover"
+              className="md:hidden absolute inset-0 w-full h-full object-cover z-0"
             />
+          </div>
+          
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10">
           </div>
  
           {/* Desktop - Logo and content at bottom */}
@@ -45,7 +44,7 @@ function App() {
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
-                  href="tel:+381123456789"
+                  href="tel:+38765 860452"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Phone className="w-5 h-5" />
