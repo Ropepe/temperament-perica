@@ -22,7 +22,7 @@ function App() {
             />
             {/* Mobile - Portrait */}
             <img 
-              src="/Portrait_artwork3.png"
+              src="/Portrait_artwork4.png"
               alt="Hero"
               className="md:hidden absolute inset-0 w-full h-full object-cover z-0"
             />
