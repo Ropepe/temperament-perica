@@ -18,11 +18,11 @@ function App() {
             <img 
               src="/Landscape_artwork.png"
               alt="Hero"
-              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain z-0"
+              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain z-0 w-4/5"
             />
             {/* Mobile - Portrait */}
             <img 
-              src="/Portrait_artwork.png"
+              src="/Portrait_artwork2.png"
               alt="Hero"
               className="md:hidden absolute inset-0 w-full h-full object-cover z-0"
             />
