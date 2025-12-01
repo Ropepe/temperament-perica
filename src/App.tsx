@@ -22,7 +22,7 @@ function App() {
             />
             {/* Mobile - Portrait */}
             <img 
-              src="/Portrait_artwork2.png"
+              src="/Portrait_artwork3.png"
               alt="Hero"
               className="md:hidden absolute inset-0 w-full h-full object-cover z-0"
             />
@@ -100,7 +100,7 @@ function App() {
                 <img
                   src="/Temperament Osnovna - Dvobojno.png"
                   alt="Bend Logo"
-                  className="w-32 h-32 object-contain"
+                  className="w-36 h-36 object-contain"
                 />
               </div>
 
@@ -111,14 +111,6 @@ function App() {
                 >
                   <Phone className="w-5 h-5" />
                   <span className="text-sm font-medium">+387 65 860 452</span>
-                </a>
-
-                <a
-                  href="mailto:bend@email.com"
-                  className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
-                >
-                  <Mail className="w-5 h-5" />
-                  <span className="text-sm font-medium">temperament.bl@gmail.com</span>
                 </a>
               </div>
 
@@ -139,6 +131,15 @@ function App() {
                   className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Youtube className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="mailto:bend@email.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Mail className="w-6 h-6" />
                 </a>
 
                 <a
