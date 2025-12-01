@@ -100,7 +100,7 @@ function App() {
                 <img
                   src="/Temperament Osnovna - Dvobojno.png"
                   alt="Bend Logo"
-                  className="w-36 h-36 object-contain"
+                  className="w-36 h-20 object-contain"
                 />
               </div>
 
