@@ -40,7 +40,7 @@ function App() {
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Phone className="w-5 h-5" />
-                  <span className="text-sm font-medium">+381 12 345 6789</span>
+                  <span className="text-sm font-medium">+387 65 860 452</span>
                 </a>
 
                 <a
@@ -48,13 +48,13 @@ function App() {
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Mail className="w-5 h-5" />
-                  <span className="text-sm font-medium">bend@email.com</span>
+                  <span className="text-sm font-medium">temperament.bl@gmail.com</span>
                 </a>
               </div>
 
               <div className="flex justify-center gap-6">
                 <a
-                  href="https://instagram.com/bend"
+                  href="https://www.instagram.com/temperamentband/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
@@ -63,7 +63,7 @@ function App() {
                 </a>
 
                 <a
-                  href="https://youtube.com/@bend"
+                  href="https://www.youtube.com/@temperament-bl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
@@ -72,7 +72,7 @@ function App() {
                 </a>
 
                 <a
-                  href="https://tiktok.com/@bend"
+                  href="https://www.tiktok.com/@temperamentbl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
