@@ -1,0 +1,186 @@
+import { useEffect } from 'react';
+import { Phone, Mail, Instagram, Youtube } from 'lucide-react';
+
+// Declare gtag for TypeScript
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function KontaktPage() {
+  useEffect(() => {
+    // Send conversion event to Google Analytics
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'event_category': 'contact',
+        'event_label': 'whatsapp_click',
+        'value': 1
+      });
+    }
+
+    // Redirect to WhatsApp after a brief moment
+    const timer = setTimeout(() => {
+      window.location.href = 'https://wa.me/38765860452';
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <div className="relative">
+        <div className="relative h-screen w-full overflow-hidden">
+          <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center relative">
+            {/* Desktop - Landscape */}
+            <img 
+              src="/Landscape_artwork.png"
+              alt="Hero"
+              className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 h-auto object-contain z-0 w-[85%]"
+            />
+            {/* Mobile - Portrait */}
+            <img 
+              src="/Portrait_artwork4.png"
+              alt="Hero"
+              className="md:hidden absolute inset-0 w-full h-full object-cover z-0"
+            />
+          </div>
+          
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10">
+          </div>
+ 
+          {/* Desktop - Logo and content at bottom */}
+          <div className="hidden md:block absolute bottom-0 left-0 right-0 z-20 pb-16 px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="flex justify-center mb-2">
+                <img
+                  src="/Temperament Osnovna - Dvobojno.png"
+                  alt="Bend Logo"
+                  className="w-48 h-48 object-contain"
+                />
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+                <a
+                  href="https://wa.me/38765860452"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Phone className="w-5 h-5" />
+                  <span className="text-sm font-medium">+387 65 860 452</span>
+                </a>
+
+                <a
+                  href="mailto:bend@email.com"
+                  className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Mail className="w-5 h-5" />
+                  <span className="text-sm font-medium">temperament.bl@gmail.com</span>
+                </a>
+              </div>
+
+              <div className="flex justify-center gap-6">
+                <a
+                  href="https://www.instagram.com/temperamentband/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@temperament-bl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Youtube className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@temperamentbl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile - Logo and content centered */}
+          <div className="md:hidden absolute bottom-0 left-0 right-0 z-20 pb-8 px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="flex justify-center mb-2">
+                <img
+                  src="/Temperament Osnovna - Dvobojno.png"
+                  alt="Bend Logo"
+                  className="w-36 h-20 object-contain"
+                />
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+                <a
+                  href="https://wa.me/38765860452"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Phone className="w-5 h-5" />
+                  <span className="text-sm font-medium">+387 65 860 452</span>
+                </a>
+              </div>
+
+              <div className="flex justify-center gap-6">
+                <a
+                  href="https://www.instagram.com/temperamentband/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@temperament-bl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Youtube className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@temperamentbl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                </a>
+
+                <a
+                  href="mailto:bend@email.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
+                >
+                  <Mail className="w-6 h-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default KontaktPage;
