@@ -1,17 +1,35 @@
+import { useEffect } from 'react';
 import { Phone, Mail, Instagram, Youtube } from 'lucide-react';
 
-function App() {
+// Declare gtag for TypeScript
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function KontaktPage() {
+  useEffect(() => {
+    // Send conversion event to Google Analytics
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'event_category': 'contact',
+        'event_label': 'whatsapp_click',
+        'value': 1
+      });
+    }
+
+    // Redirect to WhatsApp after a brief moment
+    const timer = setTimeout(() => {
+      window.location.href = 'https://wa.me/38765860452';
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
       <div className="relative">
-        {/* <div className="absolute top-6 left-6 z-20">
-          <img
-            src="/Simbol -Crvena.png"
-            alt="Logo"
-            className="w-14 h-14 object-contain"
-          />
-        </div> */}
-
         <div className="relative h-screen w-full overflow-hidden">
           <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center relative">
             {/* Desktop - Landscape */}
@@ -44,7 +62,9 @@ function App() {
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
-                  href="/kontakt"
+                  href="https://wa.me/38765860452"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Phone className="w-5 h-5" />
@@ -106,7 +126,9 @@ function App() {
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <a
-                  href="/kontakt"
+                  href="https://wa.me/38765860452"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 border border-white/20"
                 >
                   <Phone className="w-5 h-5" />
@@ -161,4 +183,4 @@ function App() {
   );
 }
 
-export default App;
+export default KontaktPage;
